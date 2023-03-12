@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'sign_in/', to : 'sessions#new'
   get '/signup', to: 'users#new'  
+  get '/sign_out', to: 'sessions#destroy'
+  resources :sessions, only: [:create]
   resources :users, only: [:create]
   resources :guides
   root 'home#index'
