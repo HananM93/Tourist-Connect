@@ -14,9 +14,11 @@
   </head>
 
   <body>
-     <% if current_user %>
+      <% if current_user %>
       Hi <%= current_user.email %>
-        <% end %>
+      <%= link_to "Log out", sign_out_path %>
+    <% end %>
+    
     <%= render 'layouts/navbar' %>
     <div class= 'container'>
     <%= yield %>

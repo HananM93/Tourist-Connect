@@ -7,16 +7,20 @@ class SessionsController < ApplicationController
     # lookup the user in the database
     @user = User.find_by(email: user_params[:email])
 
-    if @user && @user.password == user_params[:password]
+    if @user && @user.is_password?(user_params[:password])
       session[:user_id] = @user.id
-      redirect_to posts_path
+      redirect_to guides_path
     else
       flash.now[:notice] = "Invalid email or password"
       render :new
     end
   end
 
-  
+  def destroy
+    session[:user_id] = nil
+    redirect_to signin_path
+  end
+
   private
 
   def user_params
