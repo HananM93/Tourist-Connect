@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/signup', to: 'users#new'  
+  resources :users, only: [:create]
   resources :guides
   root 'home#index'
   get 'about' => 'home#about' 
