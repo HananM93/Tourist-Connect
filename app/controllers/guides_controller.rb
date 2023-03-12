@@ -1,5 +1,6 @@
 class GuidesController < ApplicationController
   before_action :set_guide, only: %i[ show edit update destroy ]
+  before_action :ensure_current_user
 
   # GET /guides or /guides.json
   def index
