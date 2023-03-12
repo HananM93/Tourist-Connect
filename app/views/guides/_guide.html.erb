@@ -5,6 +5,12 @@
   </p>
 
   <p>
+  <strong>Image:</strong>
+  <%= image_tag(guide.image, style:"width:300px; height:300px") if guide.image.attached?%>
+  
+</p>
+
+  <p>
     <strong>Location:</strong>
     <%= guide.location %>
   </p>
