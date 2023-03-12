@@ -4,7 +4,7 @@ class GuidesController < ApplicationController
 
   # GET /guides or /guides.json
   def index
-    @guides = Guide.all
+    @guides = current_user.guides
   end
 
   # GET /guides/1 or /guides/1.json
@@ -22,7 +22,8 @@ class GuidesController < ApplicationController
 
   # POST /guides or /guides.json
   def create
-    @guide = Guide.new(guide_params)
+    @guide = current_user.guides.new(guide_params)
+    
 
     respond_to do |format|
       if @guide.save
@@ -61,7 +62,7 @@ class GuidesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_guide
-      @guide = Guide.find(params[:id])
+      @guide = current_user.guides.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
