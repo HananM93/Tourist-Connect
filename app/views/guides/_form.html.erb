@@ -1,6 +1,6 @@
 <%= form_with(model: guide) do |form| %>
   <% if guide.errors.any? %>
-    <div style="color: red">
+    <div >
       <h2><%= pluralize(guide.errors.count, "error") %> prohibited this guide from being saved:</h2>
 
       <ul>
@@ -12,17 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :location, style: "display: block" %>
+    <%= form.label :location %>
     <%= form.text_field :location %>
   </div>
 
   <div>
-    <%= form.label :rate, style: "display: block" %>
+    <%= form.label :rate %>
     <%= form.number_field :rate %>
   </div>
 
