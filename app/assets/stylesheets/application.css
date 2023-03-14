@@ -60,10 +60,29 @@
     }
 
 
-    .navbar {
+    .navbar  {
       margin-bottom: 20px;
     }
 
+    .review  {
+      margin-top: 150px;
+      margin-left: 80px;
+      
+    }
 .scroll {
   overflow: hidden; 
+}
+
+
+.form {
+  background-color: rgb(40, 111, 134);
+  color: white;
+  
+}
+
+.link2 {
+  text-decoration: none;
+  color: white;
+  
+ 
 }
