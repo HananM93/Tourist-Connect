@@ -1,0 +1,18 @@
+databases:
+  - name: travelguide
+    databaseName: travelguide
+    user: hananmohamed
+
+services:
+  - type: web
+    name: travelguide
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: travelguide
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
