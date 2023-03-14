@@ -131,3 +131,8 @@ text-align: center;
   padding-top: -20px;
   padding-bottom: 20px;
 }
+
+.display-show, .display-index {
+  color:  rgb(93, 199, 236);
+  text-align: center;
+}
