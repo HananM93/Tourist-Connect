@@ -21,8 +21,7 @@
     <div >
 
       <% if current_user %>
-      Hi <%= current_user.email %>
-      <%= link_to "Log out", signout_path %>
+     
     <% end %>
 <%= yield %>
     </div>
