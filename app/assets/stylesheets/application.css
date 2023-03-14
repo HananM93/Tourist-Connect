@@ -25,9 +25,8 @@
 }
 
 .img2, .img3 { 
-    height: 89vh;
+    height: 88vh;
     width: 49vw;
-    position: absolute;   
 }
 
 
@@ -60,4 +59,11 @@
     }
     }
 
-   
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+.scroll {
+  overflow: hidden; 
+}
