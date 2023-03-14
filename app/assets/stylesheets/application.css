@@ -23,6 +23,14 @@
     left: 0;
     z-index: -1;
 }
+
+.img2, .img3 { 
+    height: 88vh;
+    width: 49vw;
+    position: absolute;   
+}
+
+
 .centered {
     position: absolute;
     top: 50%;
@@ -44,3 +52,10 @@
   .centered2:hover {
     background-color: rgb(40, 111, 134);
   }
+
+
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
