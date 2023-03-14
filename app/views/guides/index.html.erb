@@ -41,13 +41,14 @@
 </nav>
 <p><%= notice %></p>
 
-<h1>Reviews</h1>
+<h1 class="container">Reviews</h1>
 
-<div id="guides">
+<div class="container" id="guides">
   <% @guides.each do |guide| %>
     <%= render guide %>
+     <%= link_to "Show this guide", guide, class:"guide" %>
     <p>
-      <%= link_to "Show this guide", guide %>
+     
     </p>
   <% end %>
 </div>

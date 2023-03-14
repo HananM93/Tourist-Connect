@@ -1,13 +1,16 @@
-<div id="<%= dom_id guide %>">
+<body class=guides-show>
+
+<div class="container" id="<%= dom_id guide %>">
+<section class="guide-list">
   <p>
     <strong>Name:</strong>
     <%= guide.name %>
   </p>
 
   <p>
-  <strong>Image:</strong>
-  <%= image_tag(guide.image, style:"width:300px; height:300px") if guide.image.attached?%>
-  
+  <strong >Image:</strong>
+  <%= image_tag(guide.image, style:"width:300px; height:300px", class: "image") if guide.image.attached?%>
+
 </p>
 
   <p>
@@ -19,5 +22,7 @@
     <strong>Rate:</strong>
     <%= guide.rate %>
   </p>
+  </section>
 
 </div>
+</body>

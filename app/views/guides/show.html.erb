@@ -1,10 +1,50 @@
 <p style="color: green"><%= notice %></p>
+<nav class="navbar navbar-expand-lg  ">
+  <div class="container-fluid">
+    
+    <%= link_to "Tourist Connect", root_path, class:"navbar-brand" %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+        <%= link_to "Home", root_path, class:"nav-link active"%>
+       
+        </li>
+       
+        <li class="nav-item">
+          <%= link_to "Reviews", guides_path, class:"nav-link"%>
+        </li>
+    
+        <li class="nav-item">
+          <%= link_to "Add Review", new_guide_path, class:"nav-link"%>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Get Started!
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end ">
+        <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
+        <li><a class="dropdown-item" href="/signin">Sign In</a></li>
+        
+        <li><a class="dropdown-item" href="/signout">Sign Out</a></li>
+      </ul>
+    </li>
+    </ul>
+    </div> 
+  </div>
+</nav>
 
 <%= render @guide %>
 
-<div>
-  <%= link_to "Edit this guide", edit_guide_path(@guide) %> |
-  <%= link_to "Back to guides", guides_path %>
+<div class="button">
+  <%= link_to "Edit ", edit_guide_path(@guide), class:"btn btn-outline-info" %>
+  <%= link_to "Back ", guides_path, class:"btn btn-outline-info" %>
 
-  <%= button_to "Destroy this guide", @guide, method: :delete %>
+  <%= button_to "Delete", @guide, method: :delete, class:"btn btn-outline-info" %>
 </div>
