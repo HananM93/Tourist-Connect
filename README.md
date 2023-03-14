@@ -6,7 +6,7 @@
 * https://travelguide-2gkw.onrender.com/
 
 ## SCREEN SHOTS
- ![alt text](https://trello.com/1/cards/6411050b5fa9714d6d9a5ac7/attachments/641105339d619c3cd6d91e3e/previews/641105359d619c3cd6d92033/download/website.png) 
+ ![alt text](https://trello.com/1/cards/6411050b5fa9714d6d9a5ac7/attachments/6411097ce2f8f3ec0b0bed46/previews/6411097de2f8f3ec0b0bed57/download/Screenshot_2023-03-14_at_6.54.00_PM.png) 
  
 ## Technologies used used
 
