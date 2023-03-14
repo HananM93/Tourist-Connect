@@ -43,12 +43,12 @@
 
 <h1 class="container">Reviews</h1>
 
-<div class="container" id="guides">
+<div  id="guides">
   <% @guides.each do |guide| %>
     <%= render guide %>
-     <%= link_to "Show this guide", guide, class:"guide" %>
-    <p>
-     
+  
+    <p class="guide">
+        <%= link_to "Show this guide", guide, class:"btn btn-outline-info" %>
     </p>
   <% end %>
 </div>

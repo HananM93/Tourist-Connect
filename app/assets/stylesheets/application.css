@@ -79,20 +79,20 @@
   color: white;
 }
 
- 
+.edit-form {
+  background-color: rgb(189, 150, 161);
+}
 
+.review {
+  color: white;
+}
 .link2 {
   text-decoration: none;
   color: white;
   
 }
 
-.guide {
-  text-decoration: none;
-  color: black;
-  padding: 40px;
-  
-}
+
 
 /* .guide:hover {
   background-color: rgb(63, 140, 165);
@@ -123,4 +123,11 @@ text-align: center;
 .button {
  margin-left: 95px;
  padding-bottom: 20px;
+}
+
+
+.guide {
+  margin-left: 95px;
+  padding-top: -20px;
+  padding-bottom: 20px;
 }
