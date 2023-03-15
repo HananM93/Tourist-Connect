@@ -1,6 +1,6 @@
 # Intro
-* App Name: MentNotes
-* A note taking application using React js and Django Rest Framework
+* App Name: Travel Connect
+  
 
 ## Deployed Link
 * https://travelguide-2gkw.onrender.com/
